@@ -1,21 +1,10 @@
-import React from 'react';
+
 import styled from "styled-components";
 import {Link} from "react-router-dom"
 import { IoIosArrowForward } from "react-icons/io";
 
 const Header = () => {
 
-    const [show, setShow] = React.useState(false);
-
-	const changeHeaderColor = () => {
-		if (window.scrollY >= 70) {
-			setShow(true);
-		} else {
-			setShow(false);
-		}
-	};
-
-	window.addEventListener("scroll", changeHeaderColor);
 
   return (
         <Container bg='#221E63' cl='white' br="#221E63">
